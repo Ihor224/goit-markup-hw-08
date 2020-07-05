@@ -1,0 +1,94 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 38px;
+  padding: 0 24px;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+
+  color: $secondary-text-color;
+  background-color: $secondary-backgound-color;
+
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  transition: $transition-bgc, $transition-color;
+}
+
+button:hover,
+button:focus {
+  color: $white-text-color;
+  background-color: $accent;
+}
+
+.button {
+  width: max-content;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  color: $white-text-color;
+  background-color: $accent;
+
+  text-decoration: none;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-open {
+  display: none;
+}
+
+.main-header {
+  button {
+    background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+      fill: $accent;
+    }
+  }
+}
+
+.form {
+  button.btn-close {
+    background-color: $accent;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background-color: $accent;
+      color: #ffffff;
+    }
+  }
+}
